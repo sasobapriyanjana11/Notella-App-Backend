@@ -195,6 +195,28 @@ app.put("/edit-note/:noteId", authonticationToken, async (req, res) => {
     }
 });
 
+//get all -notes
+app.get("/get-all-notes", authonticationToken, async (req, res) => {
+    const {user}=req.user;
+    try{
+        const notes=await Note.find({userId:user._id          
+        }).sort({
+                isPinned:-1
+        });
+        return res.json({
+            error:false,
+            notes,
+            message:"All notes are reviewd successfuly!",
+        });
+
+    }catch(error){
+        return res.status(500).json({
+            error:true,
+            message:"Internal serverv error"
+        });
+    }
+});
+
 
 
 app.listen(8000);
