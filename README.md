@@ -58,14 +58,14 @@ The backend server will start at `http://localhost:8000`.
 ## 📌 API Endpoints
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| POST | `/api/auth/create-account` | Register a new user |
-| POST | `/api/auth/login` | Authenticate and login user |
-| GET | `/api/get-all-notes` | Get all notes for the logged-in user |
-| POST | `/api/add-note` | Create a new note |
-| PUT | `/api/edit-note/:id` | Update a note |
-| DELETE | `/api/notes/:id` | Delete a note |
-| PUT | `/api/update-note-pinned/:id` | Toggle pin/unpin note |
-| GET | `/api/search-notes?query=keyword` | Search for notes |
+| POST | `/create-account` | Register a new user |
+| POST | `/login` | Authenticate and login user |
+| GET | `/get-all-notes` | Get all notes for the logged-in user |
+| POST | `/add-note` | Create a new note |
+| PUT | `/edit-note/:id` | Update a note |
+| DELETE | `/notes/:id` | Delete a note |
+| PUT | `/update-note-pinned/:id` | Toggle pin/unpin note |
+| GET | `/search-notes?query=keyword` | Search for notes |
 
 ## 🔐 Authentication & Security
 - JWT-based authentication ensures secure API access.
