@@ -63,7 +63,7 @@ The backend server will start at `http://localhost:8000`.
 | GET | `/get-all-notes` | Get all notes for the logged-in user |
 | POST | `/add-note` | Create a new note |
 | PUT | `/edit-note/:id` | Update a note |
-| DELETE | `/notes/:id` | Delete a note |
+| DELETE | `/delete-note/:id` | Delete a note |
 | PUT | `/update-note-pinned/:id` | Toggle pin/unpin note |
 | GET | `/search-notes?query=keyword` | Search for notes |
 
