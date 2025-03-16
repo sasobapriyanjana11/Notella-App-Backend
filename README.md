@@ -71,6 +71,10 @@ The backend server will start at `http://localhost:8000`.
 - JWT-based authentication ensures secure API access.
 - Passwords are hashed using bcrypt before being stored in the database.
 - API routes are protected using authentication middleware.
+  
+### 🔹 View Collection
+1. View the Postman Collection:  
+   👉 [Click Here View Postman Collection](https://documenter.getpostman.com/view/35386302/2sAYkBt2LD)
 
 ## 🎯 License
 This project is licensed under the MIT License - see the LICENSE file for details.
